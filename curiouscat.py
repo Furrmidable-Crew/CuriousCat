@@ -9,10 +9,10 @@ def google_search(query, cat):
     """
     # Load settings
     settings = cat.mad_hatter.plugins["CuriousCat"].load_settings()
-    print("*"*100)
-    print(settings)
+    num_results = settings["number_of_results"]
+    lang = settings["language"]
 
-    search_results = search(query, num_results=settings["number_of_results"], advanced=True)
+    search_results = search(query, num_results=num_results, lang=lang, advanced=True)
     results_string = ""
 
     for i, result in enumerate(search_results):
