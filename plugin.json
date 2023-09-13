@@ -2,9 +2,9 @@
     "name": "CuriousCat",
     "version": "0.0.1",
     "description": "Search the web using Google search.",
-    "author_name": "FritzTheCat",
-    "author_url": "",
-    "plugin_url": "https://github.com/EugenioPetulla/CuriousCat",
+    "author_name": "Furrmidable Crew",
+    "author_url": "https://github.com/Furrmidable-Crew/",
+    "plugin_url": "https://github.com/Furrmidable-Crew/CuriousCat",
     "tags": "google, search",
-    "thumb": "https://raw.githubusercontent.com/EugenioPetulla/CuriousCat/main/logo.png"
+    "thumb": "https://raw.githubusercontent.com/Furrmidable-Crew/CuriousCat/main/logo.png"
 }
