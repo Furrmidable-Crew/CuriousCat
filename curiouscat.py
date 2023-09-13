@@ -5,7 +5,9 @@ from googlesearch import search
 @tool(return_direct=True)
 def google_search(query, cat):
     """
-    Useful to look for something on Google. Input is the query.
+    When user asks you to "search on google" always use this tool.
+    
+    Input is the query.
     """
     # Load settings
     settings = cat.mad_hatter.plugins["CuriousCat"].load_settings()
@@ -20,7 +22,7 @@ def google_search(query, cat):
         url = result.url
         description = result.description
 
-        results_string += f"**Title**: {title}\n**URL**: {url}\n**Description**: {description}\n\n"
+        results_string += f"**Title**: {title}\n**Description**: *{description}*\n**URL**: {url}\n---\n"
 
     return results_string
 
