@@ -10,7 +10,7 @@ def google_search(query, cat):
     Input is the query.
     """
     # Load settings
-    settings = cat.mad_hatter.plugins["curiouscat"].load_settings()
+    settings = cat.mad_hatter.get_plugin().load_settings()
     num_results = settings["number_of_results"]
     lang = settings["language"]
 
